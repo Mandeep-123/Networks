@@ -15,7 +15,7 @@ class ClientThread(threading.Thread):
             if msg=='bye':
               break
             print ("from client", msg)
-            self.csocket.send(bytes(msg,'UTF-8'))
+            #self.csocket.send(bytes(msg,'UTF-8'))
         print ("Client at ", clientAddress , " disconnected...")
 LOCALHOST = "127.0.0.1"
 PORT = 1650
